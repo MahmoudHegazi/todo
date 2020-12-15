@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  .close_btn {
+    float: right;
+    cursor:pointer;
+  }
+  .close_btn:hover {
+    color: red;
+  }
+  .active a, a {
+    color:black !important;
+  }
+  .header_h2 {
+    color: black;
+
+    font-family: lemon;
+    width: 10%;
+    padding: 5px;
+
+  }
+  .update_box {
+     margin-right: 5px;
+  }
+  .main_container, .aside_container {
+    height: 600px;
+  }
+  .active {
+    background-color: lightgreen !important;
+    border: 1px solid white !important;
+  }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid" style="width:80%;">
+<br/><br/>
+  <div class="row">
+    <div class="col-sm-4 aside_container" style="background-color:rgb(245, 150, 200);">
+      <div class="container">
+  <h2 class="header_h2 ">Lists <span><i class="fa fa-address-book-o" style="font-size:px;"></i></span></h2>
+
+  <div class="list-group col-sm-3">
+      <button class="btn btn-info">Add New list</button><br /><br />
+    <div class="list-group-item active"><a href="#">First item</a>
+    <span class="close_btn" ><i class="fa fa-close"></i></span>
+    </div>
+    <div class="list-group-item"><a href="#">Second item</a>
+    <span class="close_btn"><i class="fa fa-close"></i></span>
+    </div>
+    <div class="list-group-item"><a href="#">Third item</a>
+    <span class="close_btn"><i class="fa fa-close"></i></span>
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="col-sm-8 main_container" style="background-color:rgb(12, 150, 150);">
+
+
+
+
+
+<div class="container col-sm-10">
+  <h2>First Item   <button class="btn btn-danger">Rename</button></h2>
+
+<button class="btn btn-primary">Add Todo <i class="fa fa-check" style="font-size:"></i></button>
+  <div class="" style="border:10px solid rgb(245, 150, 200);height:400px;background:white;">
+    <a href="#" class="list-group-item"><span class="update_box"><input type="checkbox" name="value1"></span> First item<span class="close_btn"><i class="fa fa-close"></i></span></a>
+    <a href="#" class="list-group-item"><span class="update_box"><input type="checkbox" name="value1"></span> Second item<span class="close_btn"><i class="fa fa-close"></i></span></a>
+    <a href="#" class="list-group-item"><span class="update_box"><input type="checkbox" name="value1"></span> Third item <span class="close_btn"><i class="fa fa-close"></i></span></a>
+  </div>
+</div>
+
+
+
+    </div>
+  </div>
+</div>
+    
+</body>
+</html>
